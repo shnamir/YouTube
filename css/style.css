@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 56px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search form {
+    display: flex;
+    height: 40px;
+}
+.search input{
+    width: 540px;
+    height: 100%;
+    border: 1px solid gray;
+    padding: 0 16px;
+    border-radius: 40px 0 0 40px;
+    outline: 0;
+}
+.search button{
+    border-radius: 0 40px 40px 0;
+    width: 64px;
+    height: 100%;
+    border: 1px solid gray;
+    border-left: 0;
+    background-color: whitesmoke;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.material-icons{
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icons span{
+    font-size: 30px;
+}
+.icons span:hover{
+    color: gray;
+}
+.main{
+    display: flex;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+.sidebar{
+    width: 240px;
+    padding: 12px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav a{
+    height: 40px;
+    padding: 0 12px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+}
+.nav hr{
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    margin: 12px
+}
+.nav a.active,
+.nav a:hover{
+    background-color: whitesmoke;
+}
+
+img{
+    max-width: 100%;
+    
+}
+.video{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px 20px;
+    padding: 0 100px;
+    height: 100%;
+    overflow-y: auto;
+}
+.video img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    gap: 12px;
+}
+.author{
+    height: 36px;
+    width: 36px;
+    flex-shrink: 0;
+}
+.author img{
+    border-radius: 50%;
+}
+
+.details h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.details span{
+    color: #606060;
+    font-size: 14px;
+}
+h1{
+    margin-left: 20px;
+}
+
+
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shnamir/YouTube.git
+git push -u origin main
